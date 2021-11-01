@@ -1,0 +1,15 @@
+comment='havva yilmaz';
+f=[1 2 3; 4 5 6];
+g=[2,4;6,8];
+d=[f(1,1) g(1,1)];
+x=1:2:10;
+k=zeros(3);
+i=ones(2);
+s=eye(3,3); % m by n identity matrix
+length_arr=length(f);
+size_arr=size(f);
+value=input('enter a new number :'); % as a number 
+data=input('enter a new name :','s'); % for string types of input
+a=f(5);
+w=g(2,end); % from 2. element to end of g
+t=x(end); %element of end of x
