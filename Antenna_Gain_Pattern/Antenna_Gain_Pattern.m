@@ -1,0 +1,20 @@
+% The gain G of a certain microwave dish antenna
+% can be expressed as a function of angle by the equation
+%     G(x)=|sin4X/4x|;
+% where u is measured in radians from the boresite of the dish, and sinc x =
+% sin x/x. Plot this gain function on a polar plot, with the title “Antenna
+% Gain vs U” in boldface
+
+theta=-pi/2:pi/100:pi/2;
+G=abs(sin(4*theta)./(4*theta));
+polarplot(theta,G);
+grid on
+
+title('\fontsize{16}\bf_{Antenna Gain vs \theta}');
+
+% Assume that the complex function f(t) is defined by the equation
+% ƒ(t)=(1+0.25i)*t-2.0;
+% Plot the amplitude and phase of function f for 0 < t <4.
+t=0:4;
+f=(1+0.25i)*t-2.0;
+plot(t,f);
